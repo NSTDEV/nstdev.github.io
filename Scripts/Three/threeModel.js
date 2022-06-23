@@ -9,8 +9,11 @@ const camera = new THREE.PerspectiveCamera(
     0.01,
     1000
 );
+camera.position.set(0, 5, 10)
+camera.lookAt(scene.position);
 
 const renderer = new THREE.WebGLRenderer({antialiasing:true});
+renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -23,9 +26,11 @@ loader.load('../Resources/3DModel/TreeStump.gltf', function(gltf){
 });
 
 scene.background = new THREE.Color(0xB0B0B);
-var light = new THREE.HemisphereLight(0xffffff, 0xffffff, 3.5);
+var light = new THREE.AmbientLight(0xFFFFFF);
+var dirLight = new THREE.DirectionalLight(0x560000, 3);
 scene.add(light);
-camera.position.set(0, 1, 4);
+scene.add(dirLight);
+camera.position.set(0, 2.5, 4);
 
 function animate(){
     requestAnimationFrame(animate);
