@@ -1,0 +1,31 @@
+{
+    "es":{
+            "whoIM": "QUIEN SOY",
+            "home": "INICIO",
+            "projects": "PROYECTOS",
+            "who": "HOLA, SOY NAHUEL! Un desarrollador web Argentino.<br>Me gustan los videojuegos, los animales y el diseño, pero por sobre todo, me gusta aprender.",
+            "cv": "MI CV >",
+            "project1": "Portafolio personalizable",
+            "project1Desc": "Portafolio libre de uso, 100% modificable.",
+            "project2Desc": "App de screenshot hecha con Python y TKinter.",
+            "project3Desc": "App del clima hecha con Python y Tkinter.",
+            "project4": "Calculadora | Desktop",
+            "project4Desc": "Hecha con Python y TKinter.",
+            "formButton": "ENVIAR >"
+    },
+
+    "en":{
+            "whoIM": "ABOUT",
+            "home": "HOME",
+            "projects": "PROJECTS",
+            "who": "HI, I'M NAHUEL! An Argentinian Web Developer.<br>I like videogames, animals and design, but above all, I like to learn.",
+            "cv": "MY CV >",
+            "project1": "Customizable portfolio",
+            "project1Desc": "Free to use Portfolio, it is 100% modifiable.",
+            "project2Desc": "Screenshot app made with Python and TKinter.",
+            "project3Desc": "Weather app made with Python and Tkinter.",
+            "project4": "Calculator | Desktop",
+            "project4Desc": "Made with Python together and TKinter.",
+            "formButton": "SEND >"
+    }
+}
