@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    font-size: clamp(14px, 2.7vw, 24px);
+    font-family: 'Bebas Neue';
+}
+
+::selection {
+    background-color: #0B0B0B;
+    color: #f0f0f0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0B0B0B;
+    color: #FFC300;
+    margin: 0;
+    position: fixed;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    width: 90%;
+    border: 3px solid #FFC300;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    right: 3%;
+    left: 3%;
+}
+
+fieldset {
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid #FFC300;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+ol {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    margin: 0 .2rem;
+    padding: .2rem 0;
+    list-style: none;
+    border: 3px solid #FFC300;
+}
+
+li a {
+    padding: auto 1.04rem;
+}
+
+#title {
+    position: relative;
+    font-weight: bold;
+    height: 100%;
+    border-bottom: none;
+    background: none;
+}
+
+#name {
+    font-size: 2.2rem;
+    padding: 0 .3rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#navbar {
+    position: absolute;
+    width: 100%;
+    bottom: .4rem;
+    font-size: clamp(16px, 10vw, 45px);
+    text-shadow: 2px 1px #0B0B0B, -2px -1px #0B0B0B;
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+.languages {
+    position: absolute;
+    left: .5rem;
+    top: 2rem;
+    display: flex;
+    margin: .3em 0;
+}
+
+#es, #en {
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    color: #FFC300;
+    text-shadow: 2px 1px #0B0B0B, -2px -1px #0B0B0B;
+    background-color: transparent;
+    padding: .2rem .4rem;
+    margin-right: .2em;
+    transition: ease-in .2s;
+}
+
+#socialmedia {
+    position: absolute;
+    display: grid;
+    right: .5rem;
+    top: 2rem;
+    margin: .3em 0;
+}
+
+#socialmedia a{
+    font-size: 1.2rem;
+    padding: .2rem .4rem;
+    margin-bottom: .2em;
+    text-shadow: 2px 1px #0B0B0B, -2px -1px #0B0B0B;
+}
+
+/*About*/
+#about {
+    width: 85%;
+    position: absolute;
+    font-size: 1.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 1px #0B0B0B, -2px -1px #0B0B0B;
+}
+
+.textAbout {
+    margin: 0 .5rem .5rem;
+}
+
+#cvButton {
+    color: #0B0B0B;
+    background-color: #FFC300;
+    border: 5px solid #FFC300;
+    padding: 0 .7rem;
+    transition: ease-in .2s;
+    text-shadow: none !important;
+}
+
+#cvButton:hover, #formButton:hover{
+    border: 5px solid #0B0B0B;
+}
+
+a:hover, #en:hover, #es:hover {
+    color: #0B0B0B;
+    background-color: #FFC300;
+    text-shadow: none !important;
+}
+
+a {
+    color: #FFC300;
+    text-decoration: none;
+    margin: 0;
+    padding: .2rem;
+    transition: ease-in .2s;
+    outline: none;
+}
+
+
+/*Projects*/
+#projects {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    border: dotted;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.cards {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.card {
+    width: 95%;
+    border: 3px solid #FFC300;
+    background-color: #FFC300;
+    margin: .5em auto;
+    text-align: left;
+}
+
+.card-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    cursor: pointer;
+}
+
+.card-title h3 {
+    margin: 0;
+    padding: .6rem 0 .3rem .3rem;
+    color: #0B0B0B;
+    grid-area: 1;
+    grid-column: 1/4;
+}
+
+#active {
+    display: block;
+    font-weight: normal;
+    padding: .5rem;
+    margin: .15rem 0 0;
+    grid-area: 2;
+    grid-column: 1/5;
+    background-color: #0B0B0B;
+}
+
+.card-projects-link {
+    font-size: 1.5rem;
+    display: flex;
+    grid-column: 4/5;
+    justify-content: center;
+    background-color: #0B0B0B;
+    padding: 0.4rem 0rem;
+}
+
+.card-projects-link a {
+    margin: auto .3rem;
+}
+
+/*Form*/
+form {
+    position: absolute;
+    width: 85%;
+    height: 60%;
+    grid-template-rows: 20% 62% 18%;
+    grid-template-columns: 35% 35%;
+    grid-row-gap: 4%;
+    grid-column-gap: 2%;
+    display: grid;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+
+form ::placeholder {
+    color: #FFC300;
+    opacity: .8;
+    text-align: center;
+}
+
+#formText {
+    font-family: inherit;
+    font-size: 1rem;
+    grid-column: 1/3;
+    resize: none;
+    padding: .8rem;
+    text-decoration: none;
+    text-align: center;
+    color: #FFC300;
+    background-color: #0B0B0B;
+    border: 3px solid #FFC300;
+    outline: none;
+    overflow: hidden;
+}
+
+form input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .3rem;
+    text-decoration: none;
+    text-align: center;
+    color: #FFC300;
+    background-color: #0B0B0B;
+    border: 3px solid #FFC300;
+    outline: none;
+}
+
+#formButton {
+    border: 5px solid #FFC300;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0B0B0B;
+    background-color: #FFC300;
+    font-size: 1.5rem;
+    padding: .3rem 1rem;
+    transition: ease-in .2s;
+    grid-column: 1/3;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/*Email Message*/
+h4 {
+    text-align: center;
+    justify-content: center;
+    color: #0B0B0B;
+    background-color: #FFC300;
+    width: 7rem;
+    height: 1.5rem;
+    top: -1.4rem;
+    transition: all .3s;
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1100px){
+    #about {
+    font-size: clamp(25px, 5.4vw, 40px);
+    }
+    
+    #cvButton {
+        font-size: clamp(25px, 7.4vw, 40px);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    html {
+    font-size: clamp(16px, 3vw,24px);
+    }
+    .cards {
+        font-size: clamp(16px, 3vw, 30px);
+    }
+
+    form {
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 40% 20%;
+        grid-row-gap: 3%;
+        grid-column-gap: 0;
+        width: 60%;
+        height: 50%;
+    }
+
+    form #e-mail, form #fullname {
+        grid-column: 1;
+    }
+
+    #formText {
+        grid-column: 1;
+    }
+
+    #formButton {
+        font-size: clamp(20px, 6.4vw, 35px);
+    }
+}
+@media screen and (max-width: 580px){
+    #about {
+    font-size: clamp(25px, 7vw, 40px);
+    }
+    .navbar{
+        font-size: clamp(12px, 8vw, 35px);
+    }
+
+    #languages {
+        top: 3rem;
+    }
+
+    #en, #es {
+        font-size: 1.5rem;
+    }
+
+    #socialmedia {
+        display: flex;
+        top: 3rem;
+    }
+
+    #socialmedia a {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 330px){
+    .navbar {
+        font-size: clamp(14px, 8vw, 28px);
+    }
+}
+
+@media screen and (max-height: 610px){
+    .navbar {
+        font-size: clamp(14px, 8vw, 28px);
+    }
+
+    #about {
+        font-size: 120%;
+        width: 75%;
+    }
+    
+    #cvButton {
+        font-size: clamp(18px, 4vw, 27px);
+    }
+
+    #projects {
+        width: 75%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cards {
+        height: 100%;
+        grid-template-columns: 100% 100% 100% 100%;
+        column-gap: 2%;
+        align-items: start;
+        overflow: auto;
+        overflow-y: hidden;
+        margin: 1%;
+    }
+
+    .card {
+        text-align: center;
+        margin: 0 1%;
+    }
+
+    .card-title h3{
+        padding: .8rem;
+    }
+
+    .card-projects-link {
+        font-size: 130%;
+        padding: 0;
+    }
+
+    form {
+        height: 50%;
+    }
+
+    #formButton {
+        padding: 0 .5rem;
+        font-size: clamp(18px, 4vw, 27px);
+    }
+
+    .languages, #socialmedia {
+        font-size: 1.5rem;
+        display: grid;
+    }
+}

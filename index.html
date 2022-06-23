@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/styles.css">
+    <link rel="icon" href="/Resources/Imgs/Logo.ico">
+    <script src="https://kit.fontawesome.com/9104043266.js" crossorigin="anonymous"></script>
+    <title>NT</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div id="title">
+            <fieldset><legend id="name" class="animation">NAHUEL TRONCOSO</legend></fieldset>
+            <div id="languages" class="languages">
+                <button class="translate" id="es">ES</button>
+                <button class="translate" id="en">EN</button>
+            </div>
+            <div id="socialmedia">
+                <a href="https://github.com/NSTDEV" target="_blank"class="fab fa-github-alt"></a>
+                <a href="https://www.linkedin.com/in/nahuelsantiagotroncosoraskovsky/" target="_blank" class="fab fa-linkedin-in"></a>
+                <a href="#contact" class="fas fa-at" id="contactMe"></a>
+            </div>
+            
+            <section id="aboutHS1" class="hide">
+                <div id="about" key="about">
+                    <p class="textAbout lang" key="who">Hola, soy Nahuel! Un desarrollador web Argentino.<br>Me gustan los videojuegos, los animales y el diseño, pero por sobre todo, me gusta aprender.</p>
+                    <a href="./Resources/Imgs/CV-NSTR.pdf" id="cvButton" download="CV-NSTR" class="lang animation" key="cv">MI CV ></a>
+                </div>
+            </section>
+
+            <section id="projects" class="hide">
+                <div class="cards">
+                    <div class="card">
+                        <details id="detailsHS">
+                        <summary class="card-title">
+                            <h3 id="HS" class="lang" key="project1">Portafolio personalizable</h3>
+                            <div class="card-projects-link">
+                                <a href="https://github.com/NSTDEV/Plantilla-de-portafolio" target="_blank" class="fas fa-code"></a>
+                                <a href="https://nstdev.github.io/Plantilla-de-portafolio/" target="_blank" class="fas fa-link"></a>
+                            </div>
+                        </summary>
+                        <p id="active" class="lang animationText" key="project1Desc">Portafolio libre de uso, 100% modificable.</p>
+                        </details>
+                    </div>
+                    <div class="card">
+                        <details id="detailsHS">
+                        <summary class="card-title">
+                            <h3 id="HS">LemonSS | Desktop</h3>
+                            <div class="card-projects-link">
+                                <a href="https://github.com/NSTDEV/LemonSS" target="_blank" class="fas fa-code"></a>
+                                <a href="/Resources/Apps/LemonSS.exe" class="fas fa-download"></a>
+                            </div>
+                        </summary>
+                        <p id="active" class="lang animationText" key="project2Desc">App de screenshot hecha con Python y TKinter.</p>
+                        </details>
+                    </div>
+                    <div class="card">
+                        <details id="detailsHS">
+                        <summary class="card-title">
+                            <h3 id="HS">MoonSky | Desktop</h3>
+                            <div class="card-projects-link">
+                                <a href="https://github.com/NSTDEV/MoonSky" target="_blank" class="fas fa-code"></a>
+                                <a href="/Resources/Apps/MoonSky.exe" class="fas fa-download"></a>
+                            </div>
+                        </summary>
+                        <p id="active" class="lang animationText" key="project3Desc">App del clima hecha con Python y Tkinter.</p>
+                        </details>
+                    </div>
+                    <div class="card">
+                        <details id="detailsHS">
+                        <summary class="card-title">
+                            <h3 id="HS" class="lang" key="project4">Calculadora | Desktop</h3>
+                            <div class="card-projects-link">
+                                <a href="https://github.com/NSTDEV/Calculadora-con-interfaz" target="_blank" class="fas fa-code"></a>
+                                <a href="/Resources/Apps/Calculadora.exe" class="fas fa-download"></a>
+                            </div>
+                        </summary>
+                        <p id="active" class="lang animationText" key="project4Desc">Hecha con Python y TKinter.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="hide">
+                <form action="" method="post" class="animation">
+                    <input class="lang" type="text" name="Fullname" id="fullname" placeholder="Nombre completo / Full name" required>
+                    <input class="lang" type="email" name="Email" id="e-mail" placeholder="E-mail" required>
+                    <textarea class="lang" name="Message" id="formText" placeholder="Deje su mensaje / Leave a message" required></textarea>
+                    <button class="lang" key="formButton" id="formButton" type="submit" name="Send">ENVIAR ></button>
+                </form>
+            </section>
+            
+            <fieldset id="navbar">
+                <legend class="navbar">
+                    <ol>
+                        <li><a href="#about" id="aboutHS" class="lang" key="whoIM">QUIEN SOY</a></li>
+                        <li><a href="#home" id="homeHS" class="lang" key="home">INICIO</a></li>
+                        <li><a href="#projects" id="projectsHS" class="lang" key="projects">PROYECTOS</a></li>
+                    </ol>
+                </legend>
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Scripts/Three/threeModel.js" type="module"></script>
+    <script src="/Scripts/main.js" type="text/javascript"></script>
+    <?php include("./Scripts/email.php");?>
+</body>
+</html>
