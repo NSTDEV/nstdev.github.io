@@ -247,7 +247,7 @@ form {
     position: absolute;
     width: 85%;
     height: 60%;
-    grid-template-rows: 20% 62% 18%;
+    grid-template-rows: 25% 45% 25%;
     grid-template-columns: 35% 35%;
     grid-row-gap: 4%;
     grid-column-gap: 2%;
@@ -441,7 +441,7 @@ h4 {
     }
 
     form {
-        height: 50%;
+        height: 55%;
     }
 
     #formButton {
