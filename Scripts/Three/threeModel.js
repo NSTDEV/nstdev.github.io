@@ -17,7 +17,7 @@ document.body.appendChild(renderer.domElement);
 var loader = new GLTFLoader();
 var obj;
 
-loader.load('../Resources/3DMODEL/TreeStump.gltf', function(gltf){
+loader.load('../Resources/3DModel/TreeStump.gltf', function(gltf){
     obj = gltf.scene;
     scene.add(gltf.scene);
 });
