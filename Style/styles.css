@@ -307,20 +307,6 @@ form input {
     outline: none;
 }
 
-
-/*Email Message*/
-h4 {
-    text-align: center;
-    justify-content: center;
-    color: #0B0B0B;
-    background-color: #FFC300;
-    width: 7rem;
-    height: 1.5rem;
-    top: -1.4rem;
-    transition: all .3s;
-    position: absolute;
-}
-
 .hide {
     display: none;
 }
