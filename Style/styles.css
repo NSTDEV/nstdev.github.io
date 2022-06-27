@@ -375,6 +375,7 @@ form input {
 
     #socialmedia a {
         font-size: 1.5rem;
+        margin-left: 0.2em;
     }
 }
 @media screen and (max-width: 330px){
