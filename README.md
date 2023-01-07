@@ -3,7 +3,7 @@
 
 - 🌱 Estoy estudiando desarrollo web y aplicaciones digitales pero constantemente aprendo **Unity, Blender, Spline**
 
-- 💬 Puedo responderte sobre **HTML5, CSS, JavaScript, PHP, SQL, Python, C#**
+- 💬 Puedo responderte sobre **HTML5, CSS, JavaScript, JAVA, SQL, Python**
 
 - 📫 Mi correo **nahueltroncosoraskovsky@gmail.com**
 
